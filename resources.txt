@@ -1,0 +1,4 @@
+https://scipy-lectures.org/intro/index.html
+
+https://nbviewer.org/github/Py4Phy/PHY202/tree/master/
+

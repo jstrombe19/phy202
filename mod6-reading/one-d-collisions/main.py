@@ -12,7 +12,10 @@ def read_data(filename):
             if line.startswith(','):
                 continue
             values = line.split(',')
-            elastic.append(values[-1])
+            if values[-1].startswith('F'):
+                elastic.append(False)
+            else:    
+                elastic.append(True)
             measurements.append(values[1:-1])
     
     elastic = np.array(elastic)
